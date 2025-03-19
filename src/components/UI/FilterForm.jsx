@@ -45,6 +45,7 @@ function FilterForm() {
         className={classes.filter_form__input}
         placeholder="product name"
         onChange={ev => changeInput({ name: 'name', value: ev.target.value })}
+        value={input.name}
       />
       <div className={classes.filter_form__range}>
         <input
@@ -52,12 +53,14 @@ function FilterForm() {
           className={classes.filter_form__input}
           placeholder="Price from"
           onChange={ev => changeInput({ name: 'minPrice', value: ev.target.value })}
+          value={input.minPrice}
         />
         <input
           type="text"
           className={classes.filter_form__input}
           placeholder="Price to"
           onChange={ev => changeInput({ name: 'maxPrice', value: ev.target.value })}
+          value={input.maxPrice}
         />
       </div>
       <button type="submit" className={classes.filter_form__button}>
