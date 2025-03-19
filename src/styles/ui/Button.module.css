@@ -1,0 +1,22 @@
+.button {
+  max-width: 250px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+  background-color: var(--violet-dark);
+  text-transform: uppercase;
+  color: var(--light);
+  font-weight: 600;
+  line-height: 20px;
+  transition: all var(--transitionDuration);
+}
+.button:hover {
+  background-color: var(--violet);
+  color: var(--white);
+}

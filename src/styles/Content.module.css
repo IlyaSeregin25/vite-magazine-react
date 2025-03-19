@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.content__header {
+}
+.content__header_inner {
+}
+.content__header_title {
+  text-align: center;
+  padding-inline: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--light);
+}
+.content__body {
+}
+.content__body_inner {
+}
+.content__body_info {
+}

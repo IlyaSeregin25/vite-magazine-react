@@ -1,0 +1,96 @@
+.search_form {
+  width: 100%;
+  position: relative;
+}
+.search_form__input {
+  width: 100%;
+  height: 27px;
+  border-radius: var(--borderRadius);
+  background-color: var(--dark);
+  border: none;
+  padding-left: 35px;
+  color: var(--light);
+  transition: all var(--transitionDuration);
+}
+.search_form__input::placeholder {
+  color: var(--grey);
+}
+.search_form__input:user-invalid {
+  border: var(--requiredBorder);
+}
+.search_form__input:hover,
+.search_form__input:active {
+  box-shadow: var(--boxShadow);
+}
+.search_form__button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.search_form__button svg {
+  fill: var(--grey);
+}
+.search_form__box::-webkit-scrollbar {
+  display: none;
+}
+.search_form__box {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  background-color: rgb(216, 208, 224);
+  z-index: 100;
+  border-radius: var(--borderRadius);
+  padding: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+  display: grid;
+  row-gap: 5px;
+  display: none;
+}
+.search_form__box.active {
+  display: grid;
+}
+.search_form__item {
+  background-color: var(--violet-dark);
+  border-radius: var(--borderRadius);
+  transition: all var(--transitionDuration);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+.search_form__item:hover {
+  background-color: var(--violet);
+}
+.search_form__item_img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: var(--borderRadius);
+}
+.search_form__item_text {
+  color: var(--light);
+  padding-inline: 5px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

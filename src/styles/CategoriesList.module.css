@@ -1,0 +1,14 @@
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--padding);
+}
+.categories__item {
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 767.98px) {
+  .categories__list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

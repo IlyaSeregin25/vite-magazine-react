@@ -1,0 +1,144 @@
+.purchase_card {
+  padding: 20px;
+  background-color: var(--bg);
+  border-radius: var(--borderRadius);
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  row-gap: 15px;
+}
+.purchase_card__description {
+  flex: 1 0 60%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 15px;
+}
+.purchase_card__volume {
+  flex: 1 0 37%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.purchase_card__img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.purchase_card__header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.purchase_card__title_box {
+  flex: 1 1 auto;
+  display: grid;
+  gap: 5px;
+}
+.purchase_card__title {
+  color: var(--light);
+  text-decoration: none;
+  transition: all var(--transitionDuration);
+}
+.purchase_card__title:hover {
+  color: var(--violet);
+  text-decoration: underline;
+}
+.purchase_card__subtitle {
+  color: var(--grey);
+  font-size: 10px;
+}
+.purchase_card__price {
+  color: var(--light);
+  font-size: 14px;
+  flex: 0 0 60px;
+}
+.purchase_card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.purchase_card__button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--dark-sea);
+  position: relative;
+  transition: all var(--transitionDuration);
+}
+.purchase_card__button::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: var(--grey);
+  transform: translate(-50%, -50%);
+  transition: all var(--transitionDuration);
+}
+.purchase_card__button:hover {
+  background-color: var(--violet);
+}
+.purchase_card__button:hover.purchase_card__button::before,
+.purchase_card__button:hover.purchase_card__button::after {
+  background-color: var(--light);
+}
+.purchase_card__button_plus {
+  position: relative;
+}
+.purchase_card__button_plus::after {
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  background-color: var(--grey);
+  transform: translate(-50%, -50%);
+  transition: all var(--transitionDuration);
+}
+.purchase_card__amount {
+  color: var(--dark-sea);
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  min-width: 25px;
+}
+.purchase_card__total_price {
+  color: var(--grey);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.purchase_card__close {
+  fill: var(--grey);
+  cursor: pointer;
+  transition: all var(--transitionDuration);
+}
+.purchase_card__close:hover {
+  fill: var(--light);
+  scale: 1.1;
+}
+@media (max-width: 767.98px) {
+  .purchase_card {
+    padding: 10px;
+  }
+}
+@media (max-width: 480.98px) {
+  .purchase_card__header {
+    flex-direction: column;
+  }
+  .purchase_card__price {
+    flex: initial;
+  }
+}

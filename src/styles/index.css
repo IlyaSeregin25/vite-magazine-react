@@ -1,0 +1,29 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  line-height: 1.2;
+  font-size: 14px;
+  color: var(--dark-sea);
+  background-color: var(--bg);
+}
+body.lock {
+  overflow: hidden;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+footer {
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}

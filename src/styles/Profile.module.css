@@ -1,0 +1,53 @@
+.profile {
+}
+.profile__header {
+  margin-bottom: 20px;
+}
+.profile__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: var(--light);
+}
+.profile__body {
+  margin-bottom: 50px;
+}
+.profile__body_list {
+  display: grid;
+  row-gap: 10px;
+}
+.profile__body_list_item {
+}
+.profile__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.profile__footer_text {
+  color: var(--grey);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.profile__footer_price {
+  color: var(--light);
+}
+.profile__footer_button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media (max-width: 767.98px) {
+  .profile__body {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 480.98px) {
+  .profile__body {
+    margin-bottom: 25px;
+  }
+}

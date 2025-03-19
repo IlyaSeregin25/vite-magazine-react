@@ -1,0 +1,20 @@
+.soc1als {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.soc1als__item {
+}
+.soc1als__link {
+  display: block;
+}
+.soc1als__svg {
+  display: block;
+  fill: var(--grey);
+  transition: all var(--transitionDuration);
+}
+.soc1als__svg:hover {
+  fill: var(--light);
+}

@@ -1,0 +1,6 @@
+name: example
+email: 
+example@mail.ru
+password: example
+avatar: 
+https://avatars.mds.yandex.net/i?id=4064c43156084db7ac291c66970c3e5b_l-4885380-images-thumbs&n=13

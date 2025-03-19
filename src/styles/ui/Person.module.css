@@ -1,0 +1,29 @@
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.person__avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.person__avatar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--dark);
+  z-index: -1;
+}
+.person__img {
+  display: block;
+}
+.person__name {
+  color: var(--grey);
+  font-size: 10px;
+  line-height: 12px;
+}

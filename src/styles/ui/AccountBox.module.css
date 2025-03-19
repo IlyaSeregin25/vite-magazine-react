@@ -1,0 +1,44 @@
+.account_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.account_box__link {
+  display: block;
+  position: relative;
+}
+.account_box__count {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: var(--light);
+  background-color: var(--violet);
+  transform: translate(20%, 40%);
+  border-radius: 50%;
+  padding: 1px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+.account_box__svg_like {
+  display: block;
+  transition: all var(--transitionDuration);
+  stroke: var(--grey);
+  fill: none;
+}
+.account_box__svg_like:hover {
+  stroke: var(--light);
+  stroke-width: 2px;
+  fill: none;
+}
+.account_box__svg_cart {
+  display: block;
+  transition: all var(--transitionDuration);
+  stroke: none;
+  fill: var(--grey);
+}
+.account_box__svg_cart:hover {
+  stroke: none;
+  fill: var(--light);
+}
